@@ -1,30 +1,34 @@
 {
-  "name": "@react/form-data",
+  "name": "formdatajs",
   "version": "1.0.0",
-  "description": "React Middleware Data Handler To FormData Type Output.",
-  "main": "index.js",
+  "description": "Middleware Data Handler TypeScript Library To FormData Type Output.",
+  "module": "dist/esm/index.js",
+  "main": "dist/cjs/index.js",
+  "files": ["dist"],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rm -rf dist/ && prettier --write src/ && npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LinkedForest/react-formdata.git"
+    "url": "git+https://github.com/LinkedForest/form-data-js.git"
   },
   "keywords": [
-    "formdata"
+    "Node", "React", "Angular", "Form", "Data", "JSON", "Submit", "FormData", "TypeScript"
   ],
   "author": "ramy-moustafa",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/LinkedForest/react-form-data/issues"
+    "url": "https://github.com/LinkedForest/form-data-js/issues"
   },
-  "homepage": "https://github.com/LinkedForest/react-form-data#readme",
+  "homepage": "https://github.com/LinkedForest/form-data-js#readme",
   "devDependencies": {
     "@types/node": "^18.11.13",
-    "@types/react": "^18.0.26",
-    "@types/react-dom": "^18.0.9",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "typescript": "^4.9.4"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }

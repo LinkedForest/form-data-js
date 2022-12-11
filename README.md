@@ -1,2 +1,2 @@
-# react-formdata
-React Middleware Data Handler To FormData Type Output.
+# FormDataJS
+Middleware Data Handler TypeScript Library To FormData Type Output.
