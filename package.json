@@ -1,5 +1,5 @@
 {
-  "name": "formdatajs",
+  "name": "form-data-js",
   "version": "1.0.0",
   "description": "Middleware Data Handler TypeScript Library To FormData Type Output.",
   "module": "dist/esm/index.js",

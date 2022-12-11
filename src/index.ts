@@ -1,1 +1,1 @@
-export * from './core/formdatajs';
+export * from './Core/FormData';
