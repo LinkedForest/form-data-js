@@ -1,2 +1,2 @@
 # FormDataJS
-Middleware Data Handler TypeScript Library To FormData Type Output.
+Middleware Data Handler TypeScript Library To Formdatajs Type Output.
